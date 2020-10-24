@@ -51,7 +51,7 @@ class UniversalDemoRunner():
         else:
             args.img_name_unique = True
 
-        args.u_classes = get_universal_class_names()
+        args.u_classes = load_class_names(args.model_name) #get_universal_class_names()
         args.print_freq = 10
 
         args.split = 'test'
